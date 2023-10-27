@@ -11,3 +11,11 @@ from keys import *
 API_KEY = api_key
 API_SECRET = api_secret
 BASE_URL = endpoint
+
+# Create an Alpaca API connection
+api = tradeapi.REST(API_KEY, API_SECRET, base_url=BASE_URL, api_version='v2')
+
+# Get account information
+account = api.get_account()
+print(f"Account Status: {account.status}")
+print(f"Buying Power: {account.buying_power}")
