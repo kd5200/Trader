@@ -10,7 +10,7 @@ from keys import *
 # Implementing my API keys from Alpaca
 API_KEY = api_key
 API_SECRET = api_secret
-BASE_URL = endpoint
+BASE_URL = base_url
 
 # Create an Alpaca API connection
 api = tradeapi.REST(API_KEY, API_SECRET, base_url=BASE_URL, api_version='v2')
